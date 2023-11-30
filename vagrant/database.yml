@@ -14,3 +14,12 @@
     password: decide
     priv: ALL
 
+- name: Database user
+  become: true
+  become_user: postgres
+  postgresql_user:
+    db: decide
+    name: egc
+    password: egc
+    priv: ALL
+
